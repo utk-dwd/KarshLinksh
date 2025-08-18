@@ -1,6 +1,9 @@
 {
-  "extends": "@repo/typescript-config/nextjs.json",
+  "extends": "@linksh/typescript-config/nextjs.json",
   "compilerOptions": {
+    "paths": {
+      "@linksh/shared/*": ["../../packages/shared/src/*"]
+    },
     "plugins": [
       {
         "name": "next"
